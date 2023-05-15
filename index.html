@@ -1,12 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Mi portfolio</title>
+    <meta vsc="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
-    
+    <!-- Content -->
+    <div class="row">
+
+        <div class="container">
+            <style>
+                * {
+                    background-color: #7091A7;
+                }
+                .logo {
+                    width: 40px;
+                }
+                .header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                }
+            </style>
+
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/APLogo.png" id="logo-arg">
+                    <style>
+                        #logo-arg {
+                            width: 300%;
+                        }
+                    </style>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/agusgimenezl/"><img src="assets/instagram.png" class="logo"></a>
+                    <a href="https://www.linkedin.com/in/agustina-gimenez-lascano-611b98272/"><img
+                            src="assets/linkedin.png" class="logo"></a>
+                    <a href="https://www.facebook.com/AgusGimenezLascano/"><img src="assets/facebook.png"
+                            class="logo"></a>
+                    <a href="https://github.com/agusgimenezl"><img src="assets/github.png" class="logo"></a>
+                    <button type="button" class="btn btn-outline-light">Ingresar</button>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <style>
+                    img {
+                        width: 100%;
+                        /*para q ocupe todo el ancho de la pantalla*/
+                        height: 30%;
+                    }
+                </style>
+                <img src="assets/banner.jpeg" class="img-fluid">
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <img src="assets/fotoPerfil.jpg" class="img-fluid" id="fotodeperfil">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
+                    <p id="nombre">Agustina Gimenez Lascano</p>
+                    <p id="titulo">Full Stack Developer Jr.</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <span>
+                        <h1 id="acercaDeMi">Acerca de mí</h1>
+                        <p> Tengo 23 años y actualmente soy estudiante de Ingeniería Industrial en la UNT (Tucumán).
+                            Soy una persona muy curiosa, autodidacta y responsable. <br>
+                            Un día descubrí este
+                            mundo de la programación y no pude salir. Lo disfruto mucho y aspiro a lograr grandes cosas
+                            con ello.
+
+                        </p>
+                    </span>
+                </div>
+
+                <div class="row">
+                    <h1>Educación</h1>
+                    <div class="col-lg-11">
+                        <ul>
+                            <li>
+                                <h3>Curso #YoProgramo: Programación Fullstack </h3>
+                                <h5>Por Argentina Programa, Oct 2022 - May 2023</h5>
+                            </li>
+                            <p> Me permitió convertirme en Software Developer Fullstack Jr. con conocimientos
+                                específicos sobre Angular, Bootstrap, SQL, Typescript, Javascript, entre otros.
+                            </p>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h3>Carrera de Ingeniería Industrial (UNT) </h3>
+                                <h5>2019 - Presente</h5>
+                            </li>
+                            <p>Actualmente me encuentro en mi quinto y último año de carrera. Considero que la lógica
+                                del pensamiento
+                                y los conocimientos que adquirí estos años en la facultad, brindan a la programación
+                                e informática un valor agregado inigualable.
+                            </p>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h3>Curso Excel para Ingeniería y Gestión Empresarial</h3>
+                                <h5>Por Educ4tech, Ago 2022 - Oct 2022</h5>
+                            </li>
+                            <p>Completé el nivel básico, intermedio y avanzado. Algunos de los conocimientos adquiridos
+                                son:</p>
+                            <ul>
+                                <li>Funciones avanzadas y utilización de gráficos.</li>
+                                <li>Segmentación de datos.</li>
+                                <li>Tablas y gráficos dinámicos.</li>
+                                <li>Macros para automatización.</li>
+                                <li>Creación de formularios.</li>
+                            </ul>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <h1>Experiencia laboral</h1>
+                <div class="container">
+                    <div class="col-sm-6 col-md-6 col-lg-6 parteA">
+                        <ul>
+                            <li>
+                                <h3>Emprendedora- Utopica Tucumán</h3>
+                                <h5>Ago 2020 - Feb 2023</h5>
+                            </li>
+                            <p> Una experiencia enriquecedora a nivel personal, donde desarroll aptitudes
+                                como atención al cliente, plan y seguimiento de compra y stock,
+                                planillas de venta, logística y manejo de redes sociales.
+
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 parteA offset-1 offset-sm-1
+                        offset-md-1 offset-lg-1 parteB">
+                        <img src="assets/utopica.jpg" class="img-fluid
+                          img-proyecto">
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="col-sm-6 col-md-6 col-lg-6 parteA">
+                        <ul>
+                            <li>
+                                <h3>Secretaria principal en "Ocean Grill"</h3>
+                                <h5>Dic 2021 - Mar 2022</h5>
+                            </li>
+                            <p>Ubicado en el prestigioso hotel "The Setai" en Miami Beach.
+                                Desarrollé aptitudes relacionadas a la resolución de problemas,
+                                fuerte toma de decisiones, trabajo en equipo, optimización de procesos y sobre todo,
+                                mejoré mi fluidez con el idioma inglés.
+                            </p>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 parteA offset-1
+                        offset-sm-1 offset-md-1 offset-lg-1 parteB">
+                        <img src="assets/the setai.jpg" class="img-fluid
+                             img-proyecto">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <h1>Hard & Soft Skills</h1>
+                <div class=" text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'JavaScript'" [titleColor]="'black'" [percent]="50" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#1E8449'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+                <div class=" text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'HTML5'" [titleColor]="'black'" [percent]="90" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#1E8449'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+                <div class=" text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'SQL'" [titleColor]="'black'" [percent]="78" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#1E8449'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+                <div class="text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'Angular'" [titleColor]="'black'" [percent]="90" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#1E8449'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+                <div class="text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'Trabajo en equipo'" [titleColor]="'black'" [percent]="80"
+                        [showUnits]="false" [showSubtitle]="false" [radius]="100" [responsive]="true"
+                        [outerStrokeWidth]="10" [innerStrokeWidth]="8" [outerStrokeColor]="'#E57042'"
+                        [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="650"
+                        [lazy]="true"></circle-progress>
+                </div>
+
+                <div class="text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'Gestión de tiempo'" [titleColor]="'black'" [percent]="70"
+                        [showUnits]="false" [showSubtitle]="false" [radius]="100" [responsive]="true"
+                        [outerStrokeWidth]="10" [innerStrokeWidth]="8" [outerStrokeColor]="'#E57042'"
+                        [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="650"
+                        [lazy]="true"></circle-progress>
+                </div>
+
+                <div class=" text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'Creatividad'" [titleColor]="'black'" [percent]="90" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#E57042'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+                <div class="text center col-6 col-sm-4 col-md-3 col-lg-3">
+                    <circle-progress [title]="'Comunicación'" [titleColor]="'black'" [percent]="85" [showUnits]="false"
+                        [showSubtitle]="false" [radius]="100" [responsive]="true" [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="8" [outerStrokeColor]="'#E57042'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="650" [lazy]="true"></circle-progress>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <h1>Proyectos realizados</h1>
+                <div>
+                    <div class="col-sm-12 col-md-7 col-lg-6 parte1">
+                        <h3 id="subtitulo">Portfolio Web </h3>
+                        <p> Se trata de mi primer Portfolio como programadora FullStack Jr. <br>
+                            Gracias por llegar hasta aquí!
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-6 parte1
+                    offset-md-1 offset-lg-1 parte2">
+                        <img src="assets/arg programa.png" class="img-fluid
+                        img-proyecto">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <footer>
+                    <p>Gimenez Lascano Agustina | © Argentina Programa 2023</p>
+                    <p>Tucumán, Argentina</p>
+
+                </footer>
+            </div>
+
+
+        </div>
 </body>
+
 </html>
