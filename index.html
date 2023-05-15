@@ -19,19 +19,22 @@
                 * {
                     background-color: #7091A7;
                 }
+
                 .logo {
                     width: 40px;
                 }
+
                 .header {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
             </style>
 
             <div class="header">
                 <div class="logo">
                     <img src="assets/APLogo.png" id="logo-arg">
+
                     <style>
                         #logo-arg {
                             width: 300%;
@@ -46,33 +49,81 @@
                     <a href="https://www.facebook.com/AgusGimenezLascano/"><img src="assets/facebook.png"
                             class="logo"></a>
                     <a href="https://github.com/agusgimenezl"><img src="assets/github.png" class="logo"></a>
-                    <button type="button" class="btn btn-outline-light">Ingresar</button>
+                    <button type="button" class="btn btn-light">Ingresar</button>
 
                 </div>
 
             </div>
-            <div class="row">
+            <div class="row" id="info">
                 <style>
                     img {
                         width: 100%;
                         /*para q ocupe todo el ancho de la pantalla*/
                         height: 30%;
                     }
+
+                    #info {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 </style>
                 <img src="assets/banner.jpeg" class="img-fluid">
             </div>
 
-            <div class="row">
+            <div class="row" id="info">
                 <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                     <img src="assets/fotoPerfil.jpg" class="img-fluid" id="fotodeperfil">
                 </div>
+
+                <style>
+                    @media(min-width:576px) {
+                        #fotodeperfil {
+                            display: block;
+                            /* Hacer que la imagen sea un elemento de bloque */
+                            max-width: 18%;
+                            /* Establecer la anchura máxima al 100% del contenedor */
+                            height: auto;
+                            /* Establecer la altura a auto para mantener la proporción */
+                            border-radius: 49%;
+                            box-shadow: 1px 1px 1px black;
+
+                        }
+
+                        .descripcion {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                    }
+
+                    @media(max-width:576px) {
+                        #fotodeperfil {
+                            display: block;
+                            /* Hacer que la imagen sea un elemento de bloque */
+                            max-width: 40%;
+                            /* Establecer la anchura máxima al 100% del contenedor */
+                            height: auto;
+                            /* Establecer la altura a auto para mantener la proporción */
+                            margin-left: 33%;
+                            margin-top: 7%;
+                            border-radius: 50%;
+                            box-shadow: 1px 1px 1px black;
+                        }
+
+                        #nombre {
+                            padding-top: 8%;
+                        }
+                    }
+                </style>
+
                 <div class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
                     <p id="nombre">Agustina Gimenez Lascano</p>
                     <p id="titulo">Full Stack Developer Jr.</p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <span>
-                        <h1 id="acercaDeMi">Acerca de mí</h1>
+                        <h1 id="descripcion">Acerca de mí</h1>
                         <p> Tengo 23 años y actualmente soy estudiante de Ingeniería Industrial en la UNT (Tucumán).
                             Soy una persona muy curiosa, autodidacta y responsable. <br>
                             Un día descubrí este
@@ -83,54 +134,64 @@
                     </span>
                 </div>
 
-                <div class="row">
-                    <h1>Educación</h1>
-                    <div class="col-lg-11">
-                        <ul>
-                            <li>
-                                <h3>Curso #YoProgramo: Programación Fullstack </h3>
-                                <h5>Por Argentina Programa, Oct 2022 - May 2023</h5>
-                            </li>
-                            <p> Me permitió convertirme en Software Developer Fullstack Jr. con conocimientos
-                                específicos sobre Angular, Bootstrap, SQL, Typescript, Javascript, entre otros.
-                            </p>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h3>Carrera de Ingeniería Industrial (UNT) </h3>
-                                <h5>2019 - Presente</h5>
-                            </li>
-                            <p>Actualmente me encuentro en mi quinto y último año de carrera. Considero que la lógica
-                                del pensamiento
-                                y los conocimientos que adquirí estos años en la facultad, brindan a la programación
-                                e informática un valor agregado inigualable.
-                            </p>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h3>Curso Excel para Ingeniería y Gestión Empresarial</h3>
-                                <h5>Por Educ4tech, Ago 2022 - Oct 2022</h5>
-                            </li>
-                            <p>Completé el nivel básico, intermedio y avanzado. Algunos de los conocimientos adquiridos
-                                son:</p>
-                            <ul>
-                                <li>Funciones avanzadas y utilización de gráficos.</li>
-                                <li>Segmentación de datos.</li>
-                                <li>Tablas y gráficos dinámicos.</li>
-                                <li>Macros para automatización.</li>
-                                <li>Creación de formularios.</li>
-                            </ul>
-
-
-                        </ul>
-
-                    </div>
-                </div>
-
             </div>
+
+
+            <div class="row">
+                <h1>Educación</h1>
+                <div class="col-lg-11">
+                    <ul>
+                        <li>
+                            <h3>Curso #YoProgramo: Programación Fullstack </h3>
+                            <h5>Por Argentina Programa, Oct 2022 - May 2023</h5>
+                        </li>
+                        <p> Me permitió convertirme en Software Developer Fullstack Jr. con conocimientos
+                            específicos sobre Angular, Bootstrap, SQL, Typescript, Javascript, entre otros.
+                        </p>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>Carrera de Ingeniería Industrial (UNT) </h3>
+                            <h5>2019 - Presente</h5>
+                        </li>
+                        <p>Actualmente me encuentro en mi quinto y último año de carrera. Considero que la lógica
+                            del pensamiento
+                            y los conocimientos que adquirí estos años en la facultad, brindan a la programación
+                            e informática un valor agregado inigualable.
+                        </p>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>Curso Excel para Ingeniería y Gestión Empresarial</h3>
+                            <h5>Por Educ4tech, Ago 2022 - Oct 2022</h5>
+                        </li>
+                        <p>Completé el nivel básico, intermedio y avanzado. Algunos de los conocimientos adquiridos
+                            son:</p>
+                        <ul>
+                            <li>Funciones avanzadas y utilización de gráficos.</li>
+                            <li>Segmentación de datos.</li>
+                            <li>Tablas y gráficos dinámicos.</li>
+                            <li>Macros para automatización.</li>
+                            <li>Creación de formularios.</li>
+                        </ul>
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+
             <div class="row">
                 <h1>Experiencia laboral</h1>
                 <div class="container">
+                    <style>
+                        .img-proyecto {
+                            padding-left: 2em;
+                            max-width: 20%;
+                            height: 20%;
+                        }
+                    </style>
                     <div class="col-sm-6 col-md-6 col-lg-6 parteA">
                         <ul>
                             <li>
@@ -146,8 +207,7 @@
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5 parteA offset-1 offset-sm-1
                         offset-md-1 offset-lg-1 parteB">
-                        <img src="assets/utopica.jpg" class="img-fluid
-                          img-proyecto">
+                        <img src="assets/utopica.jpg" class="img-proyecto" width="200px">
 
                     </div>
                 </div>
@@ -168,8 +228,7 @@
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5 parteA offset-1
                         offset-sm-1 offset-md-1 offset-lg-1 parteB">
-                        <img src="assets/the setai.jpg" class="img-fluid
-                             img-proyecto">
+                        <img src="assets/the setai.jpg" class="img-proyecto">
 
                     </div>
                 </div>
@@ -249,8 +308,7 @@
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-6 parte1
                     offset-md-1 offset-lg-1 parte2">
-                        <img src="assets/arg programa.png" class="img-fluid
-                        img-proyecto">
+                        <img src="assets/arg programa.png" class="img-proyecto">
 
                     </div>
                 </div>
@@ -263,6 +321,18 @@
                     <p>Tucumán, Argentina</p>
 
                 </footer>
+
+                <style>
+                    footer {
+                        color: #fefefe;
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        box-shadow: 2px -2px 5px #0000;
+                        padding-top: 10px;
+                    }
+                </style>
             </div>
 
 
